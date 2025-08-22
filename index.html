@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IMVisuals.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" href="img/IMVisualsFavicon.png" type="image/png">
+  <link rel="stylesheet" href="https://use.typekit.net/vme1bhz.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="main-nav">
+      <div class="menu-toggle">☰</div>
+      <a href="home.html" class="logo">
+        <img src="img/IMVisuals Brand Refresh-07.png" alt="IMVisuals Logo">
+      </a>
+
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Main content -->
+<main class="bg">
+  <img src="img/New-IMVisuals-Logo.png" alt="IMVisuals logo">
+</main>
+
+
+
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.main-nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

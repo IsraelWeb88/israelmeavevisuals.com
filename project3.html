@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title> Project 3 - Roeding Park Tennis </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/IMVisualsFavicon.png" type="image/png">
+  <link rel="stylesheet" href="https://use.typekit.net/vme1bhz.css">
+</head>
+<body class="project-page">
+
+  <header>
+    <nav class="main-nav">
+      <div class="menu-toggle">☰</div>
+      <a href="home.html" class="logo">
+        <img src="img/IMVisuals Brand Refresh-07.png" alt="IMVisuals Logo">
+      </a>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="project-layout">
+    <section class="project-description slide-in">
+      <h2>Roeding Park Tennis</h2>
+      <p>Introducing Roeding Tennis, a collaboration 
+        website project about a California Non-Profit 
+        Public Benefit Corporation in the city of 
+        Fresno, California.<br> <br> Tools used: Wix</p>
+    </section>
+
+    <section class="project-gallery">
+      <img src="img/-roedingparknewlogo.jpg" alt="Project Image 1" />
+      <img src="img/-RoedingTennisHome.jpg" alt="Project Image 2" />
+      <img src="img/-RoedingCenterDesktopMockup.jpg" alt="Project Image 3" />
+      <img src="img/-RoedingMobileMockup.jpg" alt="Project Image 4" />
+    </section>
+  </main>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.main-nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

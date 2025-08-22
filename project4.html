@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title> Project 4 - Lucis Candies </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/IMVisualsFavicon.png" type="image/png">
+  <link rel="stylesheet" href="https://use.typekit.net/vme1bhz.css">
+</head>
+<body class="project-page">
+
+  <header>
+    <nav class="main-nav">
+      <div class="menu-toggle">☰</div>
+      <a href="home.html" class="logo">
+        <img src="img/IMVisuals Brand Refresh-07.png" alt="IMVisuals Logo">
+      </a>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="project-layout">
+    <section class="project-description slide-in">
+      <h2>Lucis Candies</h2>
+      <p>This is a logo I designed in Adobe Illustrator 
+        for a client who wanted to start up their own 
+        small candy-selling business. I went with the 
+        client's requested colors: a light blue and yellow 
+        color palette. I added brown for the visual of the 
+        bear and a black border around the typography and 
+        the elements present in the logo for a clearer 
+        perspective and separation of elements used in 
+        the logo.<br> <br> Tools used: Sketching + Adobe Illustrator 
+        + Adobe Photoshop</p>
+    </section>
+
+    <section class="project-gallery">
+      <img src="img/LucisCandiesBrand-01.jpg" alt="Project Image 1" />
+      <img src="img/LucisCandiesBrand-02.jpg" alt="Project Image 2" />
+      <img src="img/LucisCandiesBrand-03.jpg" alt="Project Image 3" />
+      <img src="img/LucisCandiesBrand-04.jpg" alt="Project Image 4" />
+      <img src="img/LucisCandiesBrand-08.jpg" alt="Project Image 5" />
+      <img src="img/Lucycards.jpg" alt="Project Image 6" />
+      <img src="img/LucisCandiesBrand-06.jpg" alt="Project Image 7" />
+      <img src="img/LucisCandiesBrand-07.jpg" alt="Project Image 8" />
+      <img src="img/Lucipage.jpg" alt="Project Image 9" />
+    </section>
+  </main>
+
+
+  <script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.main-nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

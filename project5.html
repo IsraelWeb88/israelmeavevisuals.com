@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title> Project 5 - Petcuts </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/IMVisualsFavicon.png" type="image/png">
+  <link rel="stylesheet" href="https://use.typekit.net/vme1bhz.css">
+</head>
+<body class="project-page">
+
+  <header>
+    <nav class="main-nav">
+                <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-toggle"></label>
+      <a href="index.html" class="logo">
+        <img src="img/IMVisuals Brand Refresh07.png" alt="IMVisuals Logo">
+      </a>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="project-layout">
+    <section class="project-description slide-in">
+      <h2>Petcuts</h2>
+      <p>A pet grooming business that provides services 
+        to maintain the health and appearance of pets, 
+        including bathing, clipping, trimming, nail trimming, 
+        and potentially other services like ear and eye cleaning.<br> 
+        <br> Tools used: Sketching + Adobe Illustrator + Adobe Photoshop</p>
+    </section>
+
+    <section class="project-gallery">
+      <img src="img/PC-Logo.jpg" alt="Project Image 1" />
+      <img src="img/PC-Variations.jpg" alt="Project Image 2" />
+      <img src="img/PC-Brochure.jpg" alt="Project Image 3" />
+      <img src="img/PC-Billboard.jpg" alt="Project Image 4" />
+      <img src="img/PC-Cards.jpg" alt="Project Image 5" />
+      <img src="img/PC-HalfAd.jpg" alt="Project Image 6" />
+    </section>
+  </main>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.main-nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

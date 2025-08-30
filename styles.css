@@ -1,0 +1,546 @@
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  /* Makes sure padding and border are included in width/height */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: futura, sans-serif;
+  margin-bottom: 0;  /* Remove bottom margin */
+}
+
+.bg {
+  text-align: center;  /* Centers the content horizontally within the <main> */
+}
+
+.bg img {
+  width: 50%;         /* Adjust the width to your desired size */
+  height: auto;       /* Maintain the aspect ratio */
+  display: inline-block;  /* Keeps the image as an inline element for centering */
+  margin: 30vh 0 30vh 0;
+
+  transform: translateY(-50px);
+  animation: slideInDown 2s ease forwards;
+}
+
+@keyframes slideInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header Nav Styling */
+.main-nav {
+  display: flex;
+  justify-content: space-between;  /* Logo on left, links on right */
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff; /* Optional background */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+input#menu-toggle {
+  display: none;
+}
+
+/* Logo Styling */
+.logo img {
+  height: 70px;
+  width: auto;
+}
+
+/* Navigation List */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav Links */
+.main-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover Animation */
+.main-nav a:hover {
+  color: #D64045;
+}
+
+/* ABOUT PAGE SECTION */
+.about-section {
+  background: url("img/IMVLOGOBG.jpg") center center no-repeat;
+  background-size: 60%;     /* makes the image fill the space */
+  background-attachment: fixed; /* optional: makes it stay in place while scrolling */
+  min-height: 100vh;
+  max-width: 100%;
+  margin: 4.3rem auto;
+  padding: 0 30%;
+  /* text-align: center;
+  display: flex; */
+}
+
+.about-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+
+  transform: translateY(-50px);
+  animation: slideInDown 2s ease forwards;
+}
+
+@keyframes slideInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-section h2 {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  color: #000000;
+
+  transform: translateY(-50px);
+  animation: slideInDown 2s ease forwards;
+}
+
+@keyframes slideInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-section p, .about-section li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  list-style: none;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  transform: translateY(-50px);
+  animation: slideInDown 2s ease forwards;
+}
+
+@keyframes slideInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* for my portfolio page */
+
+.portfolio-section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+
+  transform: translateY(-50px);
+  animation: slideInDown 2s ease forwards;
+}
+
+.portfolio-section h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #fff;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  transition: transform .2s; /* Animation */
+}
+
+.project-card:hover {
+  transform: scale(1.08); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4em;
+}
+
+.project-card h3 {
+  margin: 1rem;
+  font-size: 1.25rem;
+}
+
+.project-card p {
+  margin: 0 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* project1.html */
+
+.project-layout {
+  display:flex;
+  gap: 2rem;
+  padding: 3rem;
+  max-width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  transform: translateY(-50px);
+  animation: slideInDown 2s ease forwards;
+}
+
+@keyframes slideInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-description {
+  flex: 0 0 35%;
+  min-width: 280px;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slideInDown 2s ease forwards;
+}
+
+@keyframes slideInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* project.html project images */
+.project-gallery {
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.project-gallery img {
+  flex: 0 0 auto;
+  width: 50%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-description h2 {
+  font-size: 80px;
+  margin-bottom: 0.3em;
+  text-align: left;
+  font-weight: 600;
+}
+
+.project-description p {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 1em;
+  line-height: 1.5em;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+}
+
+  a {
+    /* margin: 0 0 0 1em; */
+    color: #000000;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #D64045;
+  }
+
+/* contact page */
+
+.container {
+  max-width: 600px;
+  margin: 10em auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  justify-items: center;
+
+  transform: translateY(-50px);
+  animation: slideInDown 2s ease forwards;
+}
+
+@keyframes slideInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #D64045;
+}
+
+#status {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #000000;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  margin: 0; /* Remove any margin around the footer */
+  position: relative;
+  overflow: hidden;
+}
+
+
+/*** effects **/
+.fade-in {
+	opacity: 0;
+	transition: opacity 0.5s ease 0.5s; /* duration, easing, delay */
+}
+
+.fade-in.lazy-loaded {
+	opacity: 1 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile view , Mobile screens (under 768px width)*/
+
+@media (max-width: 768px) {
+body,html {
+  background-color: #fff;
+}
+  /* Adjust navigation layout */
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2em 2em 0 2em;
+    padding: 0;
+  }
+
+  .main-nav a {
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+  }
+
+  /* hide the checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* hamburger icon default */
+.menu-toggle {
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* when checkbox is checked, show X instead */
+#menu-toggle:checked + .menu-toggle::before {
+  content: "✖";
+}
+
+.menu-toggle::before {
+  content: "☰";
+}
+
+  .main-nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    display: none; /* Hidden by default, shown with hamburger toggle */
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    transition: 0.75s ease-out all;
+    line-height: 5em;
+  }
+
+  .main-nav.active ul {
+    display: flex;
+  }
+
+  .main-nav .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    margin: auto;
+    z-index: 9999;
+  }
+
+  /* Logo sizing */
+  .logo img {
+    height: 50px;
+  }
+
+ .bg img {
+    width: 100%;
+  }
+
+  /* About Section */
+  .about-section {
+    padding: 0 1em 2em 0;
+    background-size: 100%;
+    margin: 1em;
+  }
+
+  .about-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .about-section p,
+  .about-section li {
+    font-size: 0.95rem;
+  }
+
+  /* Portfolio */
+  .portfolio-section h1 {
+    font-size: 2rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    margin: 1em;
+  }
+
+  .project-card img {
+    border-radius: 2em;
+  }
+
+  /* Project Layout */
+  .project-layout {
+    padding: 1rem;
+  }
+
+  .project-description h2 {
+    font-size: 2rem;
+    margin: 0.5em;
+  }
+
+  .project-description p {
+    font-size: 1rem;
+    margin: 1em;
+  }
+
+  .project-gallery img {
+    width: 100%;
+  }
+
+  .WebLink {
+    margin: 0 0 0 1em;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #D64045;
+  }
+
+  /* Contact */
+  .container {
+    margin: 4em 1rem;
+    padding: 1.5rem;
+  }
+
+  form label {
+    font-size: 0.95rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 1rem;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+/*** effects **/
+  .fade-in {
+	  opacity: 0;
+	  transition: opacity 0.5s ease 0.5s; /* duration, easing, delay */
+  }
+
+  .fade-in.lazy-loaded {
+	  opacity: 1 !important;
+  }
+}

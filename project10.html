@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title> Project 10 - Sparks Energy </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="imv/IMVisualsFavicon.png" type="image/png">
+  <link rel="stylesheet" href="https://use.typekit.net/vme1bhz.css">
+</head>
+<body class="project-page">
+
+  <header>
+    <nav class="main-nav">
+                <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-toggle"></label>
+      <a href="index.html" class="logo">
+        <img src="imv/IMVisuals Brand Refresh07.png" alt="IMVisuals Logo">
+      </a>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="project-layout">
+    <section class="project-description slide-in">
+      <h2>Sparks Energy</h2>
+      <p>Introducing Sparks Energy Drink, a personal project 
+        I worked on. From designing the logo to shaping the 
+        brand and designing a landing page, this journey has 
+        been incredibly rewarding, and I am thrilled with how 
+        it all came together.<br> 
+        <br> Tools used: Adobe Illustrator + Adobe Photoshop + Adobe XD + HTML + CSS </p>
+    </section>
+
+    <section class="project-gallery">
+      <img src="se/SparksEnergy-01.png" alt="Project Image 1" />
+      <img src="se/SparksEnergy-03.png" alt="Project Image 2" />
+      <img src="se/SparksEnergy-05.png" alt="Project Image 3" />
+      <img src="se/SparksEnergyDisplay-01.jpg" alt="Project Image 4" />
+      <img src="se/SparksEnergyDisplay-02.jpg" alt="Project Image 5" />
+      <img src="se/SparksEnergyDisplay-03.jpg" alt="Project Image 6" />
+      <img src="se/SparksEnergyFullWebMockup.jpg" alt="Project Image 7" />
+    </section>
+  </main>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.main-nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

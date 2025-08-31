@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title> Project 7 - Reading and Beyond </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="imv/IMVisualsFavicon.png" type="image/png">
+  <link rel="stylesheet" href="https://use.typekit.net/vme1bhz.css">
+</head>
+<body class="project-page">
+
+  <header>
+    <nav class="main-nav">
+                <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-toggle"></label>
+      <a href="index.html" class="logo">
+        <img src="imv/IMVisuals Brand Refresh07.png" alt="IMVisuals Logo">
+      </a>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="project-layout">
+    <section class="project-description slide-in">
+      <h2>Reading and Beyond</h2>
+      <p>Reading and Beyond empowers children and families to 
+        achieve productive, self-reliant lives. They offer a 
+        two-generation program that works with children and 
+        arents together to build education, economic assets, 
+        social capital, and health and well-being to create 
+        economic security that passes from one generation to 
+        the next.<br> 
+        <br> Tools used: Adobe Illustrator + Figma + Wordpress Divi Theme</p>
+    </section>
+
+    <section class="project-gallery">
+      <img src="rnb/RnB-Logo.jpg" alt="Project Image 1" />
+      <img src="rnb/RnB-Desktop.jpg" alt="Project Image 3" />
+      <img src="rnb/RnB-Mobile.jpg" alt="Project Image 4" />
+    </section>
+  </main>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.main-nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

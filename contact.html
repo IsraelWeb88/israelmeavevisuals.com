@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" href="imv/IMVisualsFavicon.png" type="image/png">
+  <link rel="stylesheet" href="https://use.typekit.net/vme1bhz.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="main-nav">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-toggle"></label>
+      <a href="index.html" class="logo">
+        <img src="imv/IMVisuals Brand Refresh07.png" alt="IMVisuals Logo">
+      </a>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <div class="container">
+    <h1>Contact Us</h1>
+
+    <!-- Netlify contact form -->
+    <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <!-- Required hidden input -->
+      <input type="hidden" name="form-name" value="contact">
+      
+      <!-- Honeypot field (hidden from users) -->
+      <p style="display:none">
+        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+      </p>
+
+      <label for="name">Name</label>
+      <input type="text" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea name="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <!-- Thank You message (hidden by default) -->
+    <div id="thankYou" style="display:none; margin-top:20px;">
+      <h2>Thank you!</h2>
+      <p>Your message has been sent. We’ll get back to you soon.</p>
+    </div>
+  </div>
+
+  <script>
+    // Navigation toggle
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+
+    // Netlify form submission with inline thank-you message
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault(); // Stop normal form submission
+
+      const formData = new FormData(this);
+
+      fetch("/", {
+        method: "POST",
+        body: formData
+      })
+      .then(() => {
+        document.getElementById("contactForm").style.display = "none";
+        document.getElementById("thankYou").style.display = "block";
+      })
+      .catch((error) => alert("Error: " + error));
+    });
+  </script>
+</body>
+</html>
